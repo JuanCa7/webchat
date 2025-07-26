@@ -70,3 +70,18 @@ body, html {
 .btn-login:hover {
   background-color: #26ba63;
 }
+
+.register-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.register-link a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}

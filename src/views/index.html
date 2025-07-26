@@ -12,13 +12,14 @@
         <aside class="sidebar">
             <div class="user-info">
                 <h2 class="logo" style="margin-bottom: 10px;">WebChat</h2>
-                <p>@usuario</p>
+                <p id="logged-user">@usuario</p>
             </div>
-            <ul class="user-list">
-                <li class="user">Trabajo</li>
-                <li class="user">Familia ❤️</li>
-                <li class="user">Amigos</li>
+            <ul class="user-list" id="room-list">
+                <li class="user" data-room="trabajo">Trabajo</li>
+                <li class="user" data-room="familia">Familia ❤️</li>
+                <li class="user" data-room="amigos">Amigos</li>
             </ul>
+            <button id="logout-button" class="logout-btn">Cerrar sesión</button>
         </aside>
         <main class="chat-main">
             <div class="messages" id="container-messages">

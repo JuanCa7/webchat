@@ -26,7 +26,6 @@ socket.on("message", ({user,message})=>{
 
 });
 
-
 message_input.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
         event.preventDefault();

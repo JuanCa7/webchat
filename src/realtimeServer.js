@@ -5,10 +5,13 @@ module.exports = httpServer => {
 
     io.on("connection", socket => {
 
-        socket.on("message",message =>{
+        socket.emit("yourSocketId", socket.id);
+
+        socket.on("message",({message, user}) =>{
             io.emit("message",{
-                user:"Juan Camilo",
-                message:message
+                user:user,
+                message:message,
+                senderId: socket.id
             })
         })
 

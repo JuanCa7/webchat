@@ -16,3 +16,9 @@ body, html {
   color: #2fd573;
   text-shadow: 0 0 10px rgba(0, 255, 229, 0.4);
 }
+
+.user-list .user.active {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
